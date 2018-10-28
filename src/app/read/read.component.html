@@ -1,0 +1,9 @@
+<div>
+  <h3>Todo List</h3>
+  <ul>
+    <li (click)="deleteTodo(todo.id)" *ngFor="let todo of todo$ | async">
+      <span>{{todo.name}}</span>
+    </li>
+  </ul>
+</div>
+
